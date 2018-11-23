@@ -31,11 +31,11 @@ pwd TEXT<br>
 <br>
 资源表(视频)<br>
 TABLE:video_info<br>
-id            (视频ID，设计成随机16位UUID，避免重复)
-author_id     (用户ID，唯一关联3个表的变量，具体约束通过代码，不用修改数据库结构)
-name	      (视频名字)
-display_ctime (页面创建时间，给用户看的)
-create_time   (video入库时间)
+id            (视频ID，设计成随机16位UUID，避免重复)<br>
+author_id     (用户ID，唯一关联3个表的变量，具体约束通过代码，不用修改数据库结构)<br>
+name	      (视频名字)<br>
+display_ctime (页面创建时间，给用户看的)<br>
+create_time   (video入库时间)<br>
 <br>
 id Varchar(64), PRIMARY KEY, NOT NULL<br>
 author_id UNSIGNED INT<br>
