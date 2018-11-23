@@ -60,12 +60,17 @@ create_time DATETIME<br>
 TABLE:sessions  (用于用户登录状态信息检索，代码需要判断过期与校验)<br>
 session_id TINYTEXT, PRIMARY KEY, NOT NULL<br>
 TTL TINYTEXT<br>
-login_name VARCHAR(64)
+login_name VARCHAR(64)<br>
 
-
-
-
-
+### 2018/11/23 <br>
+#### 更新api主模块
+新建utils文件夹
+新建uuid.go文件 包含：创建videoid和commitid的16位id函数
+在dbops文件夹
+新建conn.go 包含：把api.go文件中opendb的函数单独移到文件中，数据库不频繁开关，增加使用效率
+更新api.go 包含：新增用户，视频和评论的数据库交互函数框架，编写用户User的增，获取，删函数
+在defs文件夹
+更新errs.go 包含：新增错误处理，数据库错误变量和普通服务器错误变量
 
 
 
