@@ -57,7 +57,7 @@ author_id UNSIGNED INT<br>
 content TEXT<br>
 create_time DATETIME<br>
 <br>
-TABLE:sessions  (用于用户登录状态信息检索)<br>
+TABLE:sessions  (用于用户登录状态信息检索，代码需要判断过期与校验)<br>
 session_id TINYTEXT, PRIMARY KEY, NOT NULL<br>
 TTL TINYTEXT<br>
 login_name VARCHAR(64)
