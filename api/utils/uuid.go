@@ -2,8 +2,8 @@ package utils
 
 import (
 	"crypto/rand"
-	"fmt"
 	"io"
+	"fmt"
 )
 
 func NewUUID() (string, error) {
